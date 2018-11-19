@@ -44,7 +44,7 @@ def service_connection(key, mask):
             data.outb = data.outb[sent:]
 
 
-host, port = ('192.168.0.104', 4321)
+host, port = ('https://den-server.herokuapp.com', 4321)
 lsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 lsock.bind((host, port))
 lsock.listen()
